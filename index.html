@@ -39,7 +39,7 @@
 </head>
 
 <body class="index-page">
-  <div class="success-msg">
+  <div class="success-msg d-none">
     <div class="success-animation">
       <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
         <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
@@ -50,6 +50,25 @@
       <h3>Success!</h3>
     </div>
     <span class="cross"><i class="fa-solid fa-xmark"></i></span>
+  </div>
+  <div class="error-msg d-none">
+    <div class="check_mark">
+      <div class="sa-icon sa-error animate">
+        <span class="sa-line sa-tip animateErrorTip"></span>
+        <span class="sa-line sa-long animateErrorLong"></span>
+        <div class="sa-placeholder"></div>
+        <div class="sa-fix"></div>
+      </div>
+    </div>
+    <div class="msg">
+      <h3>Failed!</h3>
+    </div>
+    <span class="cross"><i class="fa-solid fa-xmark"></i></span>
+  </div>
+  <div class="loading">
+    <div class="spinner">
+      <span class="loader"></span>
+    </div>
   </div>
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">

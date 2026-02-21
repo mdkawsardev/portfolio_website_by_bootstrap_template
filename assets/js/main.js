@@ -254,7 +254,10 @@ setTimeout(() => {
   document.querySelector('.success-msg').style.display = 'none';
 }, 3000);
 
-cross_btn = document.querySelector('.cross')
-cross_btn.addEventListener('click', () => {
-  document.querySelector('.success-msg').style.display = 'none';
+cross_btn = document.querySelectorAll('.cross').forEach((e)=> {
+  e.addEventListener('click', () => {
+    document.querySelector('.success-msg').style.display = 'none';
+    document.querySelector('.error-msg').style.display = 'none';
+  })
+
 })
