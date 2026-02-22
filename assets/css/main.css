@@ -1634,8 +1634,7 @@ section,
   padding: 40px;
   text-align: center;
   border-radius: 16px;
-  box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
-  background-color: var(--background-color);
+  box-shadow: 0px 5px 90px 0px var(--nav-dropdown-color);
   -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
   position: absolute;
@@ -1650,10 +1649,12 @@ section,
   0% {
     width: 250px;
     height: 250px;
+    top: 40%;
   }
   100% {
     width: 300px;
     height: 300px;
+    top: 50%;
   }
 }
 
@@ -1680,7 +1681,12 @@ section,
   font-size: 20px;
   cursor: pointer;
 }
-
+.success-msg .cross {
+  color: var(--accent-color)
+}
+.error-msg .cross {
+  color: red;
+}
 .checkmark {
     width: 100px;
     height: 100px;
@@ -1702,7 +1708,7 @@ section,
     stroke-width: 2;
     stroke-miterlimit: 10;
     stroke: var(--accent-color);
-    fill: #fff;
+    fill: transparent;
     animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
  
 }
@@ -1732,7 +1738,7 @@ section,
 
 @keyframes fill {
     100% {
-        box-shadow: inset 0px 0px 0px 30px #4bb71b;
+        box-shadow: inset 0px 0px 0px 30px transparent;
     }
 }
 
@@ -1773,7 +1779,7 @@ section,
   position: absolute;
   width: 60px;
   height: 120px;
-  background: white;
+  background: transparent;
   transform: rotate(45deg);
 }
 
@@ -1813,7 +1819,7 @@ section,
 .sa-icon .sa-fix {
   width: 5px;
   height: 90px;
-  background-color: white;
+  background-color: transparent;
   position: absolute;
   left: 28px;
   top: 8px;
@@ -1907,16 +1913,17 @@ section,
 }
 
 /* loading */
+
 .loading {
   width: 300px;
   height: 300px;
   padding: 40px;
   text-align: center;
   border-radius: 16px;
-  box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 90px 0px var(--nav-dropdown-color);
   /* background-color: var(--background-color); */
-  /* -webkit-backdrop-filter: blur(15px);
-  backdrop-filter: blur(15px); */
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1926,8 +1933,8 @@ section,
 
 .spinner {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 40%;
+  left: 40%;
   transform: translate(-50%, -50%);
 }
 

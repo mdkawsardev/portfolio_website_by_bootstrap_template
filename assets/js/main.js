@@ -252,6 +252,7 @@
 
 setTimeout(() => {
   document.querySelector('.success-msg').style.display = 'none';
+  document.querySelector('.error-msg').style.display = 'none';
 }, 3000);
 
 cross_btn = document.querySelectorAll('.cross').forEach((e)=> {
