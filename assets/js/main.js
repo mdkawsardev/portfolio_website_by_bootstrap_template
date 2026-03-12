@@ -205,9 +205,7 @@
       }
     });
   }
-
   window.addEventListener("load", initSwiper);
-
   /**
    * Correct scrolling position upon page load for URLs containing hash links.
    */
@@ -225,7 +223,6 @@
       }
     }
   });
-
   /**
    * Navmenu Scrollspy
    */
